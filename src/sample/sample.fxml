@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="578.0" prefWidth="584.0">
+         <children>
+            <BorderPane prefHeight="578.0" prefWidth="584.0">
+               <top>
+                  <Label prefHeight="97.0" prefWidth="583.0" text="                               ELECTIONS" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="28.0" />
+                     </font>
+                  </Label>
+               </top>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="584.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="start" layoutX="261.0" layoutY="92.0" mnemonicParsing="false" onAction="#process" prefHeight="25.0" prefWidth="57" text="Start" />
+                        <Button fx:id="create" layoutX="261.0" layoutY="182.0" mnemonicParsing="false" onAction="#createprocess" prefHeight="25.0" prefWidth="57.0" text="Create" />
+                        <Button fx:id="results" layoutX="264.0" layoutY="228.0" mnemonicParsing="false" prefWidth="57.0" text="Results" />
+                        <Button fx:id="exit" layoutX="264.0" layoutY="274.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="57.0" text="Exit" />
+                        <Label fx:id="postname" layoutX="269.0" layoutY="96.0" text="Head boy" visible="false" />
+                        <Button fx:id="name1" layoutX="269.0" layoutY="142.0" mnemonicParsing="false" text="name 1" visible="false" />
+                        <Button fx:id="name2" layoutX="269.0" layoutY="186.0" mnemonicParsing="false" text="name 2" visible="false" />
+                        <Button fx:id="name3" layoutX="269.0" layoutY="228.0" mnemonicParsing="false" text="name 3" visible="false" />
+                        <Button fx:id="name4" layoutX="269.0" layoutY="277.0" mnemonicParsing="false" text="name 4" visible="false" />
+                        <Label fx:id="lb1" layoutX="158.0" layoutY="146.0" text="Enter name 1" visible="false" />
+                        <Label fx:id="lb2" layoutX="158.0" layoutY="186.0" text="Enter name 2" visible="false" />
+                        <Label fx:id="lb3" layoutX="158.0" layoutY="232.0" text="Enter name 3" visible="false" />
+                        <Label fx:id="lb4" layoutX="158.0" layoutY="278.0" text="Enter name 4" visible="false" />
+                        <TextField fx:id="getname1" layoutX="266.0" layoutY="142.0" visible="false" />
+                        <TextField fx:id="getname2" layoutX="266.0" layoutY="186.0" visible="false" />
+                        <TextField fx:id="getname3" layoutX="266.0" layoutY="228.0" visible="false" />
+                        <TextField fx:id="getname4" layoutX="266.0" layoutY="274.0" visible="false" />
+                        <TextField fx:id="getpostname" layoutX="266.0" layoutY="63.0" visible="false" />
+                        <Label fx:id="pn1" layoutX="150.0" layoutY="67.0" text="Enter post name" visible="false" />
+                        <Button fx:id="next" layoutX="270.0" layoutY="353.0" mnemonicParsing="false" onAction="#add" text="next" visible="false" />
+                        <Button fx:id="view" layoutX="264.0" layoutY="134.0" mnemonicParsing="false" onAction="#viewprocess" prefHeight="25.0" prefWidth="57.0" text="View" />
+                        <Label fx:id="vpn1" layoutX="278.0" layoutY="84.0" visible="false" />
+                        <Label fx:id="vlb1" layoutX="279.0" layoutY="126.0" />
+                        <Label fx:id="vlb2" layoutX="278.0" layoutY="174.0" visible="false" />
+                        <Label fx:id="vlb3" layoutX="278.0" layoutY="220.0" visible="false" />
+                        <Label fx:id="vlb4" layoutX="278.0" layoutY="266.0" visible="false" />
+                        <Button fx:id="vnext" layoutX="264.0" layoutY="366.0" mnemonicParsing="false" onAction="#view" text="next" visible="false" />
+                        <Button fx:id="startnext" layoutX="264.0" layoutY="401.0" mnemonicParsing="false" onAction="#votenext" text="Next" visible="false" />
+                        <Button fx:id="home" layoutX="62.0" layoutY="328.0" mnemonicParsing="false" onAction="#gohome" text="Home" />
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
